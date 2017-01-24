@@ -1,29 +1,23 @@
 {
-  "name": "de.appplant.cordova.plugin.local-notification",
-  "cordova_name": "Cordova LocalNotification Plugin",
+  "name": "fsr-plugin-localnotification",
   "version": "0.8.4",
   "description": "Schedules and queries for local notifications",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/katzer/cordova-plugin-local-notifications.git"
+    "url": "https://github.com/jbyrdevans/fsr-plugin-local-notifications.git"
   },
   "keywords": [
-    "appplant",
+    "fsr",
     "notification",
     "local notification",
     "cordova",
     "ecosystem:cordova",
     "cordova-android",
-    "cordova-ios",
-    "cordova-windows"
+    "cordova-ios"
   ],
   "platforms": [
     "ios",
-    "android",
-    "windows"
+    "android"
   ],
   "engines": [
     {
@@ -33,10 +27,6 @@
     {
       "name": "cordova-plugman",
       "version": ">=4.3.0"
-    },
-    {
-      "name": "cordova-windows",
-      "version": ">=4.2.0"
     }
   ],
   "dependencies": {
@@ -44,9 +34,5 @@
     "cordova-plugin-app-event": ">=1.1.0"
   },
   "author": "Sebastián Katzer",
-  "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/katzer/cordova-plugin-local-notifications/issues"
-  },
-  "homepage": "https://github.com/katzer/cordova-plugin-local-notifications#readme"
+  "license": "Apache-2.0"
 }

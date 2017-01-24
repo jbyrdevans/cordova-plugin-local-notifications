@@ -2,16 +2,16 @@
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
-        id="de.appplant.cordova.plugin.local-notification"
+        id="fsr-plugin-localnotification"
         version="0.8.4">
 
     <name>LocalNotification</name>
 
     <description>The plugin supports scheduling local notifications in various ways with a single interface. It also allows you to update, clear or cancel them. There are different interfaces to query for local notifications and a complete set of events to hook into the life cycle of local notifications. To get a deep overview we recommend to read about all the topics in our wiki and try out the Kitchen Sink App</description>
 
-    <repo>https://github.com/katzer/cordova-plugin-local-notifications.git</repo>
+    <repo>https://github.com/jbyrdevans/fsr-plugin-local-notifications</repo>
 
-    <keywords>appplant, notification, local notification</keywords>
+    <keywords>fsr, notification, local notification</keywords>
 
     <license>Apache 2.0</license>
 
@@ -20,9 +20,6 @@
     <!-- cordova -->
     <engines>
         <engine name="cordova" version=">=3.6.0" />
-        <!-- TODO next version: Probably I meant cordova-lib -->
-        <!-- <engine name="cordova-plugman" version=">=4.3.0" /> -->
-        <engine name="cordova-windows" version=">=4.2.0" />
     </engines>
 
     <!-- dependencies -->
@@ -198,27 +195,6 @@
         <source-file
             src="src/android/notification/TriggerReceiver.java"
             target-dir="src/de/appplant/cordova/plugin/notification" />
-
-    </platform>
-
-    <!-- windows -->
-    <platform name="windows">
-
-        <config-file target="config.xml" parent="/*" >
-            <preference name="WindowsToastCapable" value="true" />
-        </config-file>
-
-        <js-module src="src/windows/LocalNotificationProxy.js" name="LocalNotification.Proxy" >
-            <merges target="" />
-        </js-module>
-
-        <js-module src="src/windows/LocalNotificationCore.js" name="LocalNotification.Proxy.Core" >
-            <merges target="" />
-        </js-module>
-
-        <js-module src="src/windows/LocalNotificationUtil.js" name="LocalNotification.Proxy.Util" >
-            <merges target="" />
-        </js-module>
 
     </platform>
 
